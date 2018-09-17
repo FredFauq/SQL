@@ -1,3 +1,5 @@
+-- SQL - Partie 3 : Modifications de tables
+
 -- création de la base de donnée 'webDevelopement'
 CREATE DATABASE IF NOT EXISTS `webDevelopment` CHARACTER SET 'UTF8';
 -- Spécifier la base de données utilisée
@@ -6,9 +8,8 @@ USE `webDevelopment`
 -- Exercice 1
 -- Dans la base de données webDevelopment, ajouter à la table languages une colonne versions (VARCHAR).
 CREATE TABLE `languages` (
-    -> id INT NOT NULL AUTO_INCREMENT,
+    -> id INT AUTO_INCREMENT PRIMARY KEY ,
     -> `language` VARCHAR(15),
-    -> PRIMARY KEY (id)
     -> );
 ALTER TABLE `languages` 
 ADD `versions` VARCHAR(15);
@@ -16,7 +17,7 @@ ADD `versions` VARCHAR(15);
 -- Exercice 2
 -- Dans la base de données webDevelopment, ajouter à la table frameworks une colonne version (INT).
 ALTER TABLE `frameworks` 
-ADD `versions` INT NOT NULL;
+ADD `versions` INT;
 
 -- Exercice 3
 -- Dans la base de données webDevelopment, dans la table languages renommer la colonne versions en version.
@@ -39,14 +40,10 @@ MODIFY `version` VARCHAR(10);
 --  renommer la colonne firstPhoneNumber en phoneNumber
 --  changer le type de la colonne phoneNumber en VARCHAR
 --  ajouter les colonnes zipCode(VARCHAR) et city(VARCHAR)
-USE `codex`
+USE `codex`;
 ALTER TABLE `clients`
-DROP `secondPhoneNumber`;
-ALTER TABLE `clients`
-CHANGE `firstPhoneNumber` `phoneNumber` VARCHAR(10);
-ALTER TABLE `clients`
-ADD `zipCode` VARCHAR(6);
-ALTER TABLE `clients`
-ADD `city` VARCHAR(30);
+DROP `secondPhoneNumber`,
+CHANGE `firstPhoneNumber` `phoneNumber` VARCHAR(10),
+ADD (`zipCode` VARCHAR(6), `city` VARCHAR(30));
 
 

@@ -1,3 +1,5 @@
+-- SQL - Partie 5 : Sélection de données
+
 -- Exercice 1
 -- Dans la table languages, afficher toutes les données de la table.
 SELECT * FROM `languages`;

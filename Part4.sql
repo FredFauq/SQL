@@ -1,3 +1,5 @@
+-- SQL - Partie 4 : Insertion de données
+
 -- Exercice 1
 -- Dans la table languages insérez les données suivantes :
 -- 
@@ -10,7 +12,7 @@
 --  JavaScript version 8
 --  PHP version 7
 
-INSERT INTO `languages` (language, version) 
+INSERT INTO `languages` (`language`, `version`) 
 VALUES ('JavaScript', '5'),
 -> ('PHP', '5.2'),
 -> ('PHP', '5.4'),
@@ -27,7 +29,7 @@ VALUES ('JavaScript', '5'),
 --  Symfony version 3
 --  Jquery version 1.6
 --  Jquery version 2.10
-INSERT INTO `frameworks` (framework, version)
+INSERT INTO `frameworks` (`framework`, `version`)
 VALUES ('Symfony', '2.8'),
 ->('Symfony', '3'),
 ->('Jquery', '1.6'),

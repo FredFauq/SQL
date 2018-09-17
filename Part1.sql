@@ -1,3 +1,5 @@
+-- SQL - Création et suppression de bases de données
+
 -- création de la base de données 'languages'
 CREATE DATABASE `languages`;
 -- création de la base de donnée 'webDevelopment' avec encodage 'UTF-8'

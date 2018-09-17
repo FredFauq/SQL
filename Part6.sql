@@ -1,3 +1,5 @@
+-- SQL - Partie 6 : Sélection de données - Élargir les possibilités de la clause WHERE
+
 -- Exercice 1
 -- Dans la table frameworks, afficher toutes les données de la table ayant une version 2.x (x étant un numéro quelconque).
 SELECT * FROM `frameworks` WHERE `version` LIKE '2.%';

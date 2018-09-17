@@ -1,3 +1,5 @@
+-- SQL - Partie 2 : Création de tables
+
 -- Spécifier la base de données utilisée
 USE `webDevelopment`
 
@@ -62,9 +64,8 @@ CREATE TABLE `ide` (
 -- id (type INT, auto-incrémenté, clé primaire)
 -- name (type VARCHAR)
 CREATE TABLE IF NOT EXISTS `frameworks` (
-    -> id INT AUTO_INCREMENT,
+    -> id INT AUTO_INCREMENT PRIMARY KEY ,
     -> `name` VARCHAR(30),
-    -> PRIMARY KEY (id)
     -> );
     
 -- Exercice 7
@@ -93,14 +94,13 @@ DROP TABLE `ide`;
 CREATE DATABASE IF NOT EXISTS `codex` CHARACTER SET 'UTF8';
 USE `codex`
 CREATE TABLE IF NOT EXISTS `clients` (
-    -> id INT AUTO_INCREMENT,
+    -> id INT AUTO_INCREMENT PRIMARY KEY,
     -> `lastname` VARCHAR(30),
     -> `firstname` VARCHAR(30),
     -> `birthdate` DATE,
-    -> `address` VARCHAR(50),
-    -> `firstPhoneNumber` INT NOT NULL,
-    -> `secondPhoneNumber` INT NOT NULL,
-    -> `mail` VARCHAR(40),
-    -> PRIMARY KEY (id)
+    -> `address` VARCHAR(255),
+    -> `firstPhoneNumber` INT,
+    -> `secondPhoneNumber` INT,
+    -> `mail` VARCHAR(50),
     -> );
     
