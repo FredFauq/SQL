@@ -1,5 +1,5 @@
 -- SQL - Partie 4 : Insertion de données
-
+USE `webDevelopment`;
 -- Exercice 1
 -- Dans la table languages insérez les données suivantes :
 -- 

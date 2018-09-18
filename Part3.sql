@@ -3,7 +3,7 @@
 -- création de la base de donnée 'webDevelopement'
 CREATE DATABASE IF NOT EXISTS `webDevelopment` CHARACTER SET 'UTF8';
 -- Spécifier la base de données utilisée
-USE `webDevelopment`
+USE `webDevelopment`;
 
 -- Exercice 1
 -- Dans la base de données webDevelopment, ajouter à la table languages une colonne versions (VARCHAR).
